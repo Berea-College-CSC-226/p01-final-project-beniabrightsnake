@@ -28,7 +28,7 @@ by introduing risk based mechanics into a classic snake game. instead of only gr
     README. You can do this by saving an image in the repository and linking to it. See the sample CRC card below - 
     and REPLACE it with your own:
   
-![Don't leave me in your README!](image/crc.png "Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
+![Don't leave me in your README!](image/ourcrc.jpeg "Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
 
 ❗️**Branches**: This project will **require** effective use of git. 
 
