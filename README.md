@@ -13,14 +13,14 @@
 
 ## Milestone 1: Setup, Planning, Design
 
-**Title**: `Bombastic Boa2` Bombastic Boa
+**Title**: `Bombastic Boa2` 
 
 **Purpose**: `The purpose of the game is to challenge players reaction time and strtegic thinking 
 by introduing risk based mechanics into a classic snake game. instead of only growing longer, players must manage their snake size while avoidinghazards like bombs and others. adding a new layer of decision making and difficutly. `
 
-❗️**Source Assignment(s)**: ` `
+**Source Assignment(s)**: `the source of this assignment came inspired from boustrophedon `
 
-❗️**CRC Card(s)**:
+**CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
   - See this link for a sample CRC card and a template to use for your own cards (you will have to make a copy to edit):
     [CRC Card Example](https://docs.google.com/document/d/1JE_3Qmytk_JGztRqkPXWACJwciPH61VCx3idIlBCVFY/edit?usp=sharing)
