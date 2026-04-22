@@ -2,22 +2,23 @@
 
 ## Instructions
 
-❗️Exclamation Marks ❗️indicate action items; you should remove these emoji as you complete/update the items which 
-  they accompany. (This means that your final README should have no ❗️in it!)
+️Exclamation Marks  ️indicate action items; you should remove these emoji as you complete/update the items which 
+  they accompany. (This means that your final README should have no  ️in it!)
 
-❗️**Author(s)**: Your name(s) here
+**Author(s)**: Beni Shendera, Bright Feitsop
 
-❗️**Google Doc Link**: Your link here
+**Google Doc Link**: https://docs.google.com/document/d/1BT4B5kadw3Nl_skQR2FpIa58S7PSUuGdMJjAV-MDu8c/edit?usp=sharing
 
 ---
 
 ## Milestone 1: Setup, Planning, Design
 
-❗️**Title**: `What is the title of your project? Be creative! Replace this block of text.`
+**Title**: `Bombastic Boa2` Bombastic Boa
 
-❗**Purpose**: `In a single sentence, describe WHAT your project will do. Replace this block of text.`
+**Purpose**: `The purpose of the game is to challenge players reaction time and strtegic thinking 
+by introduing risk based mechanics into a classic snake game. instead of only growing longer, players must manage their snake size while avoidinghazards like bombs and others. adding a new layer of decision making and difficutly. `
 
-❗️**Source Assignment(s)**: `List which original assignments you will base your project on? Replace this block of text.`
+❗️**Source Assignment(s)**: ` `
 
 ❗️**CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
