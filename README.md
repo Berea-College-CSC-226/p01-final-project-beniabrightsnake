@@ -42,7 +42,7 @@ into your own, following the process we've discussed in previous assignments, th
 ```
 
 ### References 
-Runestone chapters
+Runestone chapters, Google
 
 ❗Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
 and describe how you integrated the ideas or code into your program. This includes online sources, people who have 
