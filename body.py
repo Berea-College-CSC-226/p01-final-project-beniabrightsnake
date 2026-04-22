@@ -1,7 +1,15 @@
+#from Benis_file import *
+# Segment-based Snake
 import turtle
 import time
+class GameScreen:
+    def __init__(self):
+        self.screen = turtle.Screen()
+        self.screen.title("Bombastic Boa")
+        self.screen.bgcolor("Black")
+        self.screen.setup(width=800, height=600)
+        self.screen.tracer(0)
 
-# Segment-based Snake
 class Snake:
     def __init__(self):
         self.segments = []
@@ -54,3 +62,21 @@ class Snake:
     def go_right(self):
         if self.direction != "left":
             self.direction = "right"
+game_screen = GameScreen()
+snake = Snake()
+
+screen = game_screen.screen
+
+# controls
+screen.listen()
+screen.onkey(snake.go_up, "Up")
+screen.onkey(snake.go_down, "Down")
+screen.onkey(snake.go_left, "Left")
+screen.onkey(snake.go_right, "Right")
+running = True
+while True:
+    screen.update()
+    snake.move()
+    time.sleep(0.1)
+
+screen.exitonclick()
