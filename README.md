@@ -30,35 +30,39 @@ by introduing risk based mechanics into a classic snake game. instead of only gr
   
 ![Don't leave me in your README!](image/ourcrc.jpeg "Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
 
-**Branches**: This project will **require** effective use of git. 
+❗️**Branches**: This project will **require** effective use of git. 
 
-Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
+❗Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
 branch) as they work. When you need to bring each others branches together, do so by merging each other's branches 
 into your own, following the process we've discussed in previous assignments, then re-branching out from the merged code.  
 
 ```
-    Branch 1 starting name: feitsopb1
+    Branch 1 starting name: Feitsiob1
     Branch 2 starting name: oshendera1
 ```
 
 ### References 
+Runestone chapters, Google
 
 ❗Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
 and describe how you integrated the ideas or code into your program. This includes online sources, people who have 
 helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
 section as you go. DO NOT forget about it!
 
----
 
 ## Milestone 2: Code Setup and Issue Queue
 
-❗Most importantly, keep your issue queue up to date, and focus on your code. 🙃
+Most importantly, keep your issue queue up to date, and focus on your code. 🙃
 
-❗Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
+Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
 What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
 
 ```
-    **Replace this text with your reflection
+Working on the CRC cards for the project helped better understand how to break a program into separate classes and organize responsibilities. At first, it seemed simple to just think of the game as one piece, but creating classes like Snake, Game, Food, and Bomb made it clearer how each part has its own job. like, the Snake handles movement and collisions, while the Game controls the overall flow. This separation makes the program easier to manage and update later.
+
+One thing I noticed is that planning with CRC cards forces you to think ahead. Even though our game will change, having bombs included now helps prepare for future features. It also showed us how classes collaborate with each other, like how the Snake needs to interact with Food to grow and with Bombs to detect danger.
+
+If I were to improve this design, I might simplify or combine some parts at the beginning and then expand later as the game becomes more complex. Overall, this process made us realize that designing before coding can save time and make the program more organized, especially as new features are added.
 ```
 
 ---
