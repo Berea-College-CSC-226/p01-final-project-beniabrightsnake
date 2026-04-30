@@ -86,8 +86,16 @@ Pretty confident now, we spent lot of time briging newer ideas then what our mai
 
 ### ❗User Instructions
 
-❗In a paragraph, explain how to use your program. Assume the user is starting just after they hit the "Run" button 
+In a paragraph, explain how to use your program. Assume the user is starting just after they hit the "Run" button 
 in PyCharm. 
+Once you hit "Run" in PyCharm, the game window will appear and immediately begin displaying
+ a dark, gridded forest floor where your boa is stationed at the bottom. 
+ To start the action, simply press any arrow key on your keyboard; the snake will begin moving in that direction,
+  and items will start raining from the top of the screen. 
+  Your primary goal is to use the Up, Down, Left, and Right keys to navigate the snake toward the falling Red Circles (Fruit) while actively dodging the Grey Squares (Bombs).
+   Keep a close eye on the HUD at the top-left to track your score and current wave. Be careful not to let any fruit reach the bottom of the screen or collide with the perimeter walls, 
+   as both will result in an immediate "Game Over." If you lose, the screen will display your final score, 
+   and you can simply click anywhere on the game window to exit the program.
 
 ### ❗Errors and Constraints
 
@@ -108,6 +116,20 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 ```
     Partner 1: **Replace this with your reflection
 ```
+At first i selected because it was the first game in code that came to mind. then more ideas started poring 
+our first design idea wasnt how the code ended. it all changed in during milestone 3 the game just looked kinda of basic for us.
+so instead of just screen standing there we came up with what if the screen moves. this was while i was watching soccer higjlights
+neymar was dribbling through players and i was like oh crap we can do this with the snake so what if the snake dribles throught bombs
+and thats where the rain fall idea came from in my brain its defenders coming randomly to defend the player with the ball to score a goal 
+which the player with the ball is the snake and if the snake beats the first defender aka first bomb the next defender is ready and knows your move..
+i learned a lot the biggest for me was debuging step by step and actaully fixing the code and learning what was wrong with the code and learning how to do more than what you have ideally
+the hardest part was being debuging and fiding the right codes. 
+knowing what i know now i would try to be a lot more creative then this at some point during this code i was playing around and wanted to have bombs as actuall immages of bombs and fruits as 
+actually images of fruits both random and 8 of each.after trying to do it my brain told me with the time we have i should just stick to what we have. and i guess since were using turles it was a lot harder and i ddint wnat somehting i liked to make 
+both me and my partner start all over.
+working with my partner made it a lot easier hes good at seeing both point of views and just open to listening to new ideas and change 
+which was huge for us because if he wasnt a person thats easy to work with we would not end up with the idea we ended with. so shout out to bright 
+for being open to new ideas and making my first ever parther projects a good expeirnce witouth givng me headche.
 
 ```
     Partner 2: **Replace this with your reflection
