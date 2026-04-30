@@ -44,7 +44,7 @@ into your own, following the process we've discussed in previous assignments, th
 ### References 
 Runestone chapters, Google
 
-❗Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
+Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
 and describe how you integrated the ideas or code into your program. This includes online sources, people who have 
 helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
 section as you go. DO NOT forget about it!
@@ -71,15 +71,14 @@ If I were to improve this design, I might simplify or combine some parts at the 
 
 ❗Indicate what percentage of the project you have left to complete and how confident you feel. 
 
-❗️**Completion Percentage**: `0 - 100%`
+**Completion Percentage**: `0 - 100%` 75%
 
 ❗️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
   strategies you can employ to increase the likelihood that you'll be successful in completing this project 
   before the deadline.
 
 ```
-    **Replace this with your reflection
-```
+Pretty confident now, we spent lot of time briging newer ideas then what our main idea was and that worked out pretty well for us in terms of being little more creative and different.```
 
 ---
 
