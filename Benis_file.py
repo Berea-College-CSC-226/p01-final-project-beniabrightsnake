@@ -127,28 +127,3 @@ class Faller(turtle.Turtle):
         self.sety(self.ycor() - speed)
 
 
-# --- Setup ---
-game_screen = GameScreen()
-snake = Snake()
-screen = game_screen.screen
-
-hud = turtle.Turtle();
-hud.hideturtle();
-hud.color("white");
-hud.penup();
-hud.goto(-380, 260)
-legend = turtle.Turtle();
-legend.hideturtle();
-legend.penup()
-legend.color("#ff4757");
-legend.goto(60, 270);
-legend.write("● FRUIT (CATCH)", font=("Courier", 10, "bold"))
-legend.color("#7f8c8d");
-legend.goto(185, 270);
-legend.write("| ■ BOMB (DODGE)", font=("Courier", 10, "bold"))
-
-screen.listen()
-screen.onkey(snake.go_up, "Up");
-screen.onkey(snake.go_down, "Down")
-screen.onkey(snake.go_left, "Left");
-screen.onkey(snake.go_right, "Right")

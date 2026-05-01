@@ -30,14 +30,14 @@ by introduing risk based mechanics into a classic snake game. instead of only gr
   
 ![Don't leave me in your README!](image/ourcrc.jpeg "Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
 
-❗️**Branches**: This project will **require** effective use of git. 
+**Branches**: This project will **require** effective use of git. 
 
-❗Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
+Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
 branch) as they work. When you need to bring each others branches together, do so by merging each other's branches 
 into your own, following the process we've discussed in previous assignments, then re-branching out from the merged code.  
 
 ```
-    Branch 1 starting name: Feitsiob1
+    Branch 1 starting name: Feitsopb
     Branch 2 starting name: oshendera1
 ```
 
@@ -84,7 +84,7 @@ Pretty confident now, we spent lot of time briging newer ideas then what our mai
 
 ## Milestone 4: Final Code, Presentation, Demo
 
-### ❗User Instructions
+### User Instructions
 
 In a paragraph, explain how to use your program. Assume the user is starting just after they hit the "Run" button 
 in PyCharm. 
@@ -114,9 +114,10 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 - How well did you work with your partner? What made it go well? What made it challenging?
 
 ```
-    Partner 1: **Replace this with your reflection
+Partner 1: **Replace this with your reflection
 ```
-At first i selected because it was the first game in code that came to mind. then more ideas started poring 
+
+At first i selected because it was the first game in code that came to mind. then more ideas started pouring 
 our first design idea wasnt how the code ended. it all changed in during milestone 3 the game just looked kinda of basic for us.
 so instead of just screen standing there we came up with what if the screen moves. this was while i was watching soccer higjlights
 neymar was dribbling through players and i was like oh crap we can do this with the snake so what if the snake dribles throught bombs
@@ -132,7 +133,12 @@ which was huge for us because if he wasnt a person thats easy to work with we wo
 for being open to new ideas and making my first ever parther projects a good expeirnce witouth givng me headche.
 
 ```
-    Partner 2: **Replace this with your reflection
+Partner 2: **Replace this with your reflection
 ```
-
+we brainstormed on an idea, and came up with a snake game, which we had to then make it different, from what everyother person has had in the past. finding a way to make it special was the harder part. 
+the initial design was just a regular snake game, but along the way, we came up with a new idea, of making thoings fall from the upper screen downward. the initial design was not so much different from the design we are currently working on.
+i learned that ideas can be changed while working on projects. i learned that i need to be fluid and open up for more ideas as i code through whatever i am doing. 
+the hardest part for me was debugging the code, and then coming up with new creative ideas of making some objects come down randomly. 
+next time, i will break the code even further, making good use of functional decomposition and top-down design. 
+i did a good job with him. it was hectic, filled with moments of me having to remind him of our project a couple times. but overall, it was a great experience.  
 ---

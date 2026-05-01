@@ -20,13 +20,13 @@ class GameScreen:
         grid_painter.color("#001a00")
         for x in range(-400, 401, 20):
             grid_painter.penup()
-            grid_painter.goto(x, 300);
-            grid_painter.pendown();
+            grid_painter.goto(x, 300)
+            grid_painter.pendown()
             grid_painter.goto(x, -300)
         for y in range(-300, 301, 20):
             grid_painter.penup()
-            grid_painter.goto(-400, y);
-            grid_painter.pendown();
+            grid_painter.goto(-400, y)
+            grid_painter.pendown()
             grid_painter.goto(400, y)
 
 class Snake:
@@ -38,9 +38,9 @@ class Snake:
         self.eye_r = turtle.Turtle()
         for e in [self.eye_l, self.eye_r]:
             e.penup();
-            e.shape("circle");
-            e.shapesize(0.3, 0.3);
-            e.color("black");
+            e.shape("circle")
+            e.shapesize(0.3, 0.3)
+            e.color("black")
             e.speed(0)
     def create_snake(self):
         positions = [(0, -200), (-20, -200), (-40, -200)]
@@ -70,91 +70,81 @@ class Snake:
             head.setx(head.xcor() + 20)
 
 
-        def update_eyes(self):
-            head = self.segments[0]
-            hx, hy = head.xcor(), head.ycor()
-            if self.direction == "up" or self.direction == "stop":
-                self.eye_l.goto(hx - 6, hy + 6);
-                self.eye_r.goto(hx + 6, hy + 6)
-            elif self.direction == "down":
-                self.eye_l.goto(hx - 6, hy - 6);
-                self.eye_r.goto(hx + 6, hy - 6)
-            elif self.direction == "left":
-                self.eye_l.goto(hx - 6, hy + 6);
-                self.eye_r.goto(hx - 6, hy - 6)
-            elif self.direction == "right":
-                self.eye_l.goto(hx + 6, hy + 6);
-                self.eye_r.goto(hx + 6, hy - 6) #####
+    def update_eyes(self):
+        head = self.segments[0]
+        hx, hy = head.xcor(), head.ycor()
+        if self.direction == "up" or self.direction == "stop":
+             self.eye_l.goto(hx - 6, hy + 6)
+             self.eye_r.goto(hx + 6, hy + 6)
+        elif self.direction == "down":
+             self.eye_l.goto(hx - 6, hy - 6)
+             self.eye_r.goto(hx + 6, hy - 6)
+        elif self.direction == "left":
+             self.eye_l.goto(hx - 6, hy + 6)
+             self.eye_r.goto(hx - 6, hy - 6)
+        elif self.direction == "right":
+             self.eye_l.goto(hx + 6, hy + 6)
+             self.eye_r.goto(hx + 6, hy - 6) #####
 
+    def grow(self):
+        self.add_segment(self.segments[-1].position())
 
-#     def add_segment(self, position, is_head=False):
-# # class Snake:
-# #     def __init__(self):
-# #         self.segments = []
-# #         self.create_snake()
-# #         self.direction = "stop"
-# #
-# #     def create_snake(self):
-# #         positions = [(0, 0), (-20, 0), (-40, 0)]
-# #         for pos in positions:
-# #             self.add_segment(pos)
-# #
-#     def add_segment(self, position):
-#         segment = turtle.Turtle()
-#         segment.shape("square")
-#         segment.color("green")
-#         segment.penup()
-#         segment.goto(position)
-#         self.segments.append(segment)
-#
-#     def move(self):
-#         # move body (back to front)
-#         for i in range(len(self.segments) - 1, 0, -1):
-#             x = self.segments[i - 1].xcor()
-#             y = self.segments[i - 1].ycor()
-#             self.segments[i].goto(x, y)
-#
-#         # move head
-#         head = self.segments[0]
-#         if self.direction == "up":
-#             head.sety(head.ycor() + 20)
-#         elif self.direction == "down":
-#             head.sety(head.ycor() - 20)
-#         elif self.direction == "left":
-#             head.setx(head.xcor() - 20)
-#         elif self.direction == "right":
-#             head.setx(head.xcor() + 20)
-#
-#     def go_up(self):
-#         if self.direction != "down":
-#             self.direction = "up"
-#
-#     def go_down(self):
-#         if self.direction != "up":
-#             self.direction = "down"
-#
-#     def go_left(self):
-#         if self.direction != "right":
-#             self.direction = "left"
-#
-#     def go_right(self):
-#         if self.direction != "left":
-#             self.direction = "right"
-# game_screen = GameScreen()
-# snake = Snake()
-#
-# screen = game_screen.screen
-#
-# # controls
-# screen.listen()
-# screen.onkey(snake.go_up, "Up")
-# screen.onkey(snake.go_down, "Down")
-# screen.onkey(snake.go_left, "Left")
-# screen.onkey(snake.go_right, "Right")
-# running = True
-# while True:
-#     screen.update()
-#     snake.move()
-#     time.sleep(0.1)
-#
-# screen.exitonclick()
+    def go_up(self):
+        if self.direction != "down": self.direction = "up"
+
+    def go_down(self):
+        if self.direction != "up": self.direction = "down"
+
+    def go_left(self):
+        if self.direction != "right": self.direction = "left"
+
+    def go_right(self):
+        if self.direction != "left": self.direction = "right"
+
+    class Faller(turtle.Turtle):
+        def __init__(self, item_type):
+            super().__init__()
+            self.item_type = item_type
+            self.penup()
+            if self.item_type == "fruit":
+                self.shape("circle")
+                self.color("#ff4757")
+                self.shapesize(0.9, 0.9)
+            else:
+                self.shape("square")
+                self.color("#57606f")
+                self.shapesize(1.4, 1.4)
+            self.respawn(initial_spawn=True)
+
+        def respawn(self, initial_spawn=False):
+            x = random.randint(-19, 19) * 20
+            y = random.randint(300, 600) if initial_spawn else random.randint(320, 500)
+            self.goto(x, y)
+
+        def fall(self, speed):
+            self.sety(self.ycor() - speed)
+# --- Setup ---
+game_screen = GameScreen()
+snake = Snake()
+screen = game_screen.screen
+
+hud = turtle.Turtle()
+hud.hideturtle()
+hud.color("white")
+hud.penup()
+hud.goto(-380, 260)
+legend = turtle.Turtle()
+legend.hideturtle()
+legend.penup()
+legend.color("#ff4757")
+legend.goto(60, 270)
+legend.write("● FRUIT (CATCH)", font=("Courier", 10, "bold"))
+legend.color("#7f8c8d")
+legend.goto(185, 270)
+legend.write("| ■ BOMB (DODGE)", font=("Courier", 10, "bold"))
+
+screen.listen()
+screen.onkey(snake.go_up, "Up")
+screen.onkey(snake.go_down, "Down")
+screen.onkey(snake.go_left, "Left")
+screen.onkey(snake.go_right, "Right")
