@@ -124,86 +124,91 @@ class Faller(turtle.Turtle):
         def fall(self, speed):
             self.sety(self.ycor() - speed)
 
-######## main####
-# --- Setup ---
-game_screen = GameScreen()
-snake = Snake()
-screen = game_screen.screen
+def main():
+    game_screen = GameScreen()
+    snake = Snake()
+    screen = game_screen.screen
 
-hud = turtle.Turtle()
-hud.hideturtle()
-hud.color("white")
-hud.penup()
-hud.goto(-380, 260)
-legend = turtle.Turtle()
-legend.hideturtle()
-legend.penup()
-legend.color("#ff4757")
-legend.goto(60, 270)
-legend.write("● FRUIT (CATCH)", font=("Courier", 10, "bold"))
-legend.color("#7f8c8d")
-legend.goto(185, 270)
-legend.write("| ■ BOMB (DODGE)", font=("Courier", 10, "bold"))
+    hud = turtle.Turtle()
+    hud.hideturtle()
+    hud.color("white")
+    hud.penup()
+    hud.goto(-380, 260)
 
-screen.listen()
-screen.onkey(snake.go_up, "Up")
-screen.onkey(snake.go_down, "Down")
-screen.onkey(snake.go_left, "Left")
-screen.onkey(snake.go_right, "Right")
-"""""""#Initial Speed Settings"""
-score, wave = 0, 1
-fall_speed = 6.0
-game_speed = 0.15
-fallers = [Faller("fruit")]
-for _ in range(3): fallers.append(Faller("bomb"))
+    legend = turtle.Turtle()
+    legend.hideturtle()
+    legend.penup()
+    legend.color("#ff4757")
+    legend.goto(60, 270)
+    legend.write("● FRUIT (CATCH)", font=("Courier", 10, "bold"))
+    legend.color("#7f8c8d")
+    legend.goto(185, 270)
+    legend.write("| ■ BOMB (DODGE)", font=("Courier", 10, "bold"))
 
-running = True
-while running:
-    hud.clear()
-    hud.write(f"Score: {score}  Wave: {wave}", font=("Courier", 16, "bold"))
+    screen.listen()
+    screen.onkey(snake.go_up, "Up")
+    screen.onkey(snake.go_down, "Down")
+    screen.onkey(snake.go_left, "Left")
+    screen.onkey(snake.go_right, "Right")
+
+    score, wave = 0, 1
+    fall_speed = 6.0
+    game_speed = 0.15
+
+    fallers = [Faller("fruit")]
+    for _ in range(3):
+        fallers.append(Faller("bomb"))
+
+    running = True
+    while running:
+        hud.clear()
+        hud.write(f"Score: {score}  Wave: {wave}", font=("Courier", 16, "bold"))
+
+        screen.update()
+        snake.move()
+        snake.update_eyes()
+
+        head = snake.segments[0]
+
+        if abs(head.xcor()) > 390 or abs(head.ycor()) > 290:
+            running = False
+
+        for f in fallers:
+            f.fall(fall_speed)
+
+            if f.distance(head) < 25:
+                if f.item_type == "bomb":
+                    running = False
+                else:
+                    score += 10
+                    snake.grow()
+                    f.respawn()
+                    wave += 1
+                    fall_speed += 0.5
+                    game_speed *= 0.96
+                    if game_speed < 0.04:
+                        game_speed = 0.04
+                    if wave % 3 == 0:
+                        fallers.append(Faller("bomb"))
+
+            if f.ycor() < -310:
+                if f.item_type == "fruit":
+                    running = False
+                else:
+                    f.respawn()
+
+        time.sleep(game_speed)
+
+    hud.goto(0, 0)
+    hud.color("#e74c3c")
+    hud.write("GAME OVER", align="center", font=("Courier", 40, "bold"))
+    hud.goto(0, -40)
+    hud.color("white")
+    hud.write(f"Final Score: {score}", align="center", font=("Courier", 18, "normal"))
+
     screen.update()
-    snake.move()
-    snake.update_eyes()
-    head = snake.segments[0]
-# 1. WAY TO LOSE: Wall Collision
-    if abs(head.xcor()) > 390 or abs(head.ycor()) > 290:
-        running = False
+    screen.exitonclick()
 
-    for f in fallers:
-        f.fall(fall_speed)
-        # 2. WAY TO LOSE: Bomb Collision
-        if f.distance(head) < 25:
-            if f.item_type == "bomb":
-                running = False
-            else:
-                score += 10
-                snake.grow()
-                f.respawn()
-                wave += 1
-
-                # Dynamic Difficulty
-                fall_speed += 0.5
-                game_speed *= 0.96
-                if game_speed < 0.04: game_speed = 0.04
-
-                if wave % 3 == 0: fallers.append(Faller("bomb"))
-
-        # 3. WAY TO LOSE: Missed Fruit
-        if f.ycor() < -310:
-            if f.item_type == "fruit":
-                running = False  # This ends the game if fruit hits the floor
-            else:
-                f.respawn()  # Bombs reset safely
-
-    time.sleep(game_speed)
-
-# --- Game Over Screen ---
-hud.goto(0, 0)
-hud.color("#e74c3c")
-hud.write("GAME OVER", align="center", font=("Courier", 40, "bold"))
-hud.goto(0, -40)
-hud.color("white")
-hud.write(f"Final Score: {score}", align="center", font=("Courier", 18, "normal"))
-screen.update()
-screen.exitonclick()
+if __name__ == "__main__":
+    main()
 
