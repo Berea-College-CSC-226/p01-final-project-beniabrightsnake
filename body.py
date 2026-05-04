@@ -148,3 +148,6 @@ screen.onkey(snake.go_up, "Up")
 screen.onkey(snake.go_down, "Down")
 screen.onkey(snake.go_left, "Left")
 screen.onkey(snake.go_right, "Right")
+screen.exitonclick()
+####
+
