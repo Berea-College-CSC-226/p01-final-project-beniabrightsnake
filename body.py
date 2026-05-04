@@ -84,7 +84,7 @@ class Snake:
              self.eye_r.goto(hx - 6, hy - 6)
         elif self.direction == "right":
              self.eye_l.goto(hx + 6, hy + 6)
-             self.eye_r.goto(hx + 6, hy - 6) #####
+             self.eye_r.goto(hx + 6, hy - 6)
 
     def grow(self):
         self.add_segment(self.segments[-1].position())
@@ -123,6 +123,7 @@ class Snake:
 
         def fall(self, speed):
             self.sety(self.ycor() - speed)
+
 # --- Setup ---
 game_screen = GameScreen()
 snake = Snake()
@@ -148,6 +149,26 @@ screen.onkey(snake.go_up, "Up")
 screen.onkey(snake.go_down, "Down")
 screen.onkey(snake.go_left, "Left")
 screen.onkey(snake.go_right, "Right")
+"""""""#Initial Speed Settings"""
+score, wave = 0, 1
+fall_speed = 6.0
+game_speed = 0.15
+fallers = [Faller("fruit")]
+for _ in range(3): fallers.append(Faller("bomb"))
+
+running = True
+while running:
+    hud.clear()
+    hud.write(f"Score: {score}  Wave: {wave}", font=("Courier", 16, "bold"))
+    screen.update()
+    snake.move()
+    head = snake.segments[0]
+# 1. WAY TO LOSE: Wall Collision
+    if abs(head.xcor()) > 390 or abs(head.ycor()) > 290:
+        running = False
+
+    for f in fallers:
+        f.fall(fall_speed)
 screen.exitonclick()
 ####
 
