@@ -71,7 +71,7 @@ If I were to improve this design, I might simplify or combine some parts at the 
 
 Indicate what percentage of the project you have left to complete and how confident you feel. 
 
-**Completion Percentage**: `0 - 100%` 75%
+**Completion Percentage**:  75%
 
 ️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
   strategies you can employ to increase the likelihood that you'll be successful in completing this project 
@@ -135,10 +135,19 @@ for being open to new ideas and making my first ever parther projects a good exp
 ```
 Partner 2: **Replace this with your reflection
 ```
-we brainstormed on an idea, and came up with a snake game, which we had to then make it different, from what everyother person has had in the past. finding a way to make it special was the harder part. 
-the initial design was just a regular snake game, but along the way, we came up with a new idea, of making thoings fall from the upper screen downward. the initial design was not so much different from the design we are currently working on.
-i learned that ideas can be changed while working on projects. i learned that i need to be fluid and open up for more ideas as i code through whatever i am doing. 
-the hardest part for me was debugging the code, and then coming up with new creative ideas of making some objects come down randomly. 
-next time, i will break the code even further, making good use of functional decomposition and top-down design. 
-i did a good job with him. it was hectic, filled with moments of me having to remind him of our project a couple times. but overall, it was a great experience.  
+We started this project by brainstorming ideas and eventually chose to build a snake game.
+It felt like a good starting point because it is simple and familiar, but we also knew a lot of other people might pick the same idea.
+Because of that, we wanted to make ours different. Finding a way to make it unique was honestly one of the hardest parts. 
+We did not just want to copy a basic version, so we pushed ourselves to think of something more creative.
+
+At first, our design was just a normal snake game. As we worked on it, we came up with the idea of having objects fall from the top of the screen. 
+That changed the gameplay and made it more interesting. Even though the final version is still similar to what we started with, that one idea made a big difference. 
+It showed that our design could grow while we were actually building it.
+
+I learned that ideas can change while working on a project. You do not have to stick to the original plan the whole time. I also learned that I need to stay open to new ideas as I code, because sometimes better ideas come up later. 
+The hardest part for me was debugging the code and figuring out how to make objects fall randomly in a way that worked. That took a lot of trial and error.
+
+Next time, I would break my code down more using functional decomposition and top down design so it is easier to manage. I think I worked well with my partner overall. 
+It was a little hectic at times because I had to remind him about the project a few times, but we still got everything done. In the end, it was a good experience and I learned a lot from it.
+
 ---
