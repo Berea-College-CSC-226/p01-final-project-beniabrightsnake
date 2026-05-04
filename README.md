@@ -69,11 +69,11 @@ If I were to improve this design, I might simplify or combine some parts at the 
 
 ## Milestone 3: Virtual Check-In
 
-❗Indicate what percentage of the project you have left to complete and how confident you feel. 
+Indicate what percentage of the project you have left to complete and how confident you feel. 
 
 **Completion Percentage**: `0 - 100%` 75%
 
-❗️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
+️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
   strategies you can employ to increase the likelihood that you'll be successful in completing this project 
   before the deadline.
 
@@ -97,15 +97,15 @@ Once you hit "Run" in PyCharm, the game window will appear and immediately begin
    as both will result in an immediate "Game Over." If you lose, the screen will display your final score, 
    and you can simply click anywhere on the game window to exit the program.
 
-### ❗Errors and Constraints
+### Errors and Constraints
 
-❗Every program has bugs or features that had to be scrapped for time. These bugs should be tracked in the issue queue. 
+Every program has bugs or features that had to be scrapped for time. These bugs should be tracked in the issue queue. 
 You should already have a few items in here from the prior weeks. Create a new issue for any undocumented errors and 
 deficiencies that remain in your code. Bugs found that aren't acknowledged in the queue will be penalized.
 
-### ❗Reflection
+### Reflection
 
-❗Each partner should write three to four well-written paragraphs address the following (at a minimum):
+Each partner should write three to four well-written paragraphs address the following (at a minimum):
 - Why did you select the project that you did?
 - How closely did your final project reflect your initial design?
 - What did you learn from this process?
