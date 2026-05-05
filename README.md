@@ -99,9 +99,9 @@ Once you hit "Run" in PyCharm, the game window will appear and immediately begin
 
 ### Errors and Constraints
 
-Every program has bugs or features that had to be scrapped for time. These bugs should be tracked in the issue queue. 
-You should already have a few items in here from the prior weeks. Create a new issue for any undocumented errors and 
-deficiencies that remain in your code. Bugs found that aren't acknowledged in the queue will be penalized.
+Our limitations were mostly related to the time we had to work on the project and the fact that we were using turtle graphics, which is not the most powerful library for game development. 
+We had to be creative with how we implemented certain features, like the falling bombs and fruits, and we had to make some compromises on the design to fit within our constraints. For example, we wanted to have more complex animations and interactions,
+ but we had to simplify them to ensure that we could complete the project on time.
 
 ### Reflection
 

@@ -124,6 +124,7 @@ class Faller(turtle.Turtle):
         def fall(self, speed):
             self.sety(self.ycor() - speed)
 
+
 def main():
     game_screen = GameScreen()
     snake = Snake()
